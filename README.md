@@ -37,3 +37,11 @@ To Set up EDS for the first time on a new machine
 	5. Run tomcat
 
 	6. Verify that application pages are loaded
+
+
+Code Acknowledgements
+
+Thanks to https://github.com/romansanchez/Calaca, for showing how to invoke elasticsearch APIs.
+
+Thanks to http://visjs.org/examples/network/exampleApplications/neighbourhoodHighlight.html, for showing how to highlight connected nodes.
+
