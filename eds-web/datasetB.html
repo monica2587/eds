@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='utf-8'>
+<title>An exploratory data search interface</title>
+<link rel='stylesheet' href='css/reset.css' />
+<link rel='stylesheet' href='css/bootstrap.min.css' />
+<link rel='stylesheet' href='css/interfaceB.css' />
+    <!--[if IE]>
+        <script src='http://html5shiv.googlecode.com/svn/trunk/html5.js'></script>
+    <![endif]-->
+</head>
+<body onload=search()>
+
+    <!-- Breadcrumb -->
+    <ol class='breadcrumb'>
+        <li>
+	    <a href='interfaceB.html' target='_self'>Interface B Search Page</a></li>
+	<li class='active'>Dataset description</li>
+    </ol>
+
+    <div class='content'>
+        <div class='container-fluid'>
+	    <!-- Listing of search results -->
+            <div class='results-container'>
+		<section class='results'>
+		    <!-- placeholder for search results that are added in js -->
+		</section>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- Powered by ElasticSearch -->
+    </footer>
+
+    <!-- Load resources -->
+    <script src='js/jquery-1.11.2.min.js' ></script>
+    <script src='js/bootstrap.min.js' type='text/javascript'></script>
+    <script src='js/elasticsearch.jquery.min.js' type='text/javascript'></script>
+    <script src='js/dataset.js' type='text/javascript'></script>
+</body>
+</html>
