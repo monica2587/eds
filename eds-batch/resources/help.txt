@@ -1,0 +1,18 @@
+Getting started
+
+Step 1: Launch ElasticSearch from Terminal
+$ cd <folder where extracted>
+$ ./bin/elasticsearch
+
+Step 2: Launch Marvel - Sense in a browser
+http://localhost:9200/_plugin/marvel/sense/
+
+Execute test query in Marvel
+GET _search
+{
+  "query": {
+    "match_all": {}
+  }
+}
+
+Step 3: If resetting to start from scratch, run commands in setup.txt in Marvel
