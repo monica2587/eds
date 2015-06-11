@@ -17,7 +17,7 @@ public class Main {
 		System.out.println("eds: Create search node instance...");
 		
 		Config thothConfig = Config.getInstance();
-		// on startup - create a client node that joins the cluster "thoth"
+		// on startup - create a client node that joins the cluster "eds"
 		Node node = nodeBuilder().clusterName("eds").client(true).node();
 		Client client = node.client();
 		
@@ -26,13 +26,13 @@ public class Main {
 		boolean result = false;
 		
 		//index all Socrata repositories
-		/*indexer = new SocrataIndexer();
+		indexer = new SocrataIndexer();
 		result = indexer.index(client, thothConfig.getSocrataRepoList());
 		if(!result) {
 			System.out.println("eds: Could not fully index all the Socrata reppositories. Please check logs for stacktrace");
-		}*/
+		}
 		
-		//index all Custom repositories
+		//index all Custom repositories - commenting out because the repository has now migrated to a different platform :-(
 		/*indexer = new CustomIndexer();
 		result = indexer.index(client, thothConfig.getCustomRepoList());
 		if(!result) {

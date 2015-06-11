@@ -123,17 +123,17 @@ public class CKANIndexer extends Indexer {
 						datasetObj.setDatasetUrl(repo + "api/action/package_show?id=" + dataset);
 						
 						//set tag List
-						/*JsonNode tagArrObj = resultObj.get("tags");
+						JsonNode tagArrObj = resultObj.get("tags");
 						if(tagArrObj != null && !tagArrObj.isNull() && tagArrObj.isArray()){
 							List<String> tagList = new ArrayList<String>();
 							for (JsonNode tagObj : tagArrObj) {
 								tagList.add(tagObj.get("name").textValue());
 							}
 							datasetObj.setTagList(tagList);
-						}*/
+						}
 						
-						//For data.gc.ca only
-						JsonNode keywordObj = resultObj.get("keywords");
+						//For data.gc.ca only - comment above code and uncomment below
+						/*JsonNode keywordObj = resultObj.get("keywords");
 						if(keywordObj != null){
 							List<String> tagList = new ArrayList<String>();
 							String[] keywordArr = keywordObj.textValue().split(",");
@@ -141,7 +141,7 @@ public class CKANIndexer extends Indexer {
 								tagList.add(keyword);
 							}
 							datasetObj.setTagList(tagList);
-						}
+						}*/
 						
 						//set format and URL List
 						Set<String> formatList = new HashSet<String>();
